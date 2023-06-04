@@ -21,7 +21,7 @@ import { Statistics } from 'components/Statistics/Statistics';
    countPositiveFeedbackPercentage = () => {
      const { good } = this.state;
      const total = this.countTotalFeedback();
-     return Math.round((good / total) * 100) || 0;
+     return Math.round((good* 100)/total) || 0;
    }
 
   render() {
